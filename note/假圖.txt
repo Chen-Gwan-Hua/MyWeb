@@ -1,0 +1,2 @@
+Fake image:https://picsum.photos/100 (w and h 100px)
+	   https://picsum.photos/300/200 (w 300px h 200px)

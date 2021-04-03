@@ -1,0 +1,6 @@
+Tools --> Command Palette --> 裝install package control ，Package Control:Install Control
+右下選擇編輯的檔案格式   !+tab   語法+tab
+
+
+1.CssReset
+2.切版
