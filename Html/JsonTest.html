@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="Creat">
+        <input type="text" name="">
+        <a href="javascript:;">Creat</a>
+    </div>
+    <ul id="users"></ul>
+    <input type="text" name="" id=""><button></button>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $.ajax({
+                    url: 'http://localhost:3000/users',
+                    method: 'get',
+                    dataType: 'json',
+                    data: {}
+                }).done(function(res) {
+                    console.log(res)
+                    $('#users').empty()
+                    res.forEach(function(user) {
+                        $('#users').append('<li>' + user.name + '</li>')
+                    });
+
+                })
+                .fail(function(err) {
+                    console.log(err)
+
+                })
+        })
+        $('#Creat > a').on('click', function() {
+            let name = $('#Creat > input').val().trim()
+            if (!name) return false;
+            $.ajax({
+                url: 'http://localhost:3000/users',
+                method: 'post',
+                dataType: 'json',
+                data: {
+                    name: $('#Creat > input').val().trim()
+                }
+            })
+        })
+        $('#Creat > a').on('click', function() {
+            let name = $('#Creat > input').val().trim()
+            if (!name) return false;
+            $.ajax({
+                url: 'http://localhost:3000/users',
+                method: 'post',
+                dataType: 'json',
+                data: {
+                    name: $('#Creat > input').val().trim()
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

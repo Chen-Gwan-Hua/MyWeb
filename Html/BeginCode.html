@@ -1,57 +1,177 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="../CSS/CssReset.css">
-	<link rel="stylesheet" type="text/css" href="../CSS/main.css">
-	<script src="https://kit.fontawesome.com/97f8b5bbf8.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../CSS/CssReset.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+    <script src="https://kit.fontawesome.com/97f8b5bbf8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
+
 <body>
-	<div class="wrap">
-		<div id="content">
-			<input type="checkbox" id="toggler">
-			<header>
-				<div class="item">
-					<a href="#anchor1" class="anchor">Contact me</a>
-				</div>
-				<div class="item">
-					<a href="#anchor2" class="anchor">About</a>
-				</div>
-				<div class="item">
-					<a href="#anchor3" class="anchor">Works</a>
-				</div>
-			</header>
-				<label for="toggler" id="tog">
+    <div class="wrap">
+        <div id="content">
+            <input type="checkbox" id="toggler">
+            <header>
+                <div class="item">
+                    <a href="#anchor1" class="anchor">About</a>
+                </div>
+                <div class="item">
+                    <a href="#anchor2" class="anchor">Note</a>
+                </div>
+                <div class="item">
+                    <a href="#anchor3" class="anchor">Works</a>
+                </div>
+                <div class="item">
+                    <a href="#anchor4" class="anchor">Contact me</a>
+                </div>
+            </header>
+            <label for="toggler" id="tog">
 					<div class="ham-container">
 						<span></span>
 						<span></span>
 						<span></span>
 					</div>
-				</label>
+			</label>
 
-			<div class="context" id="#anchor1">
-				<p>我來自新北市鶯歌，畢業於龍華科技大學，目前致力於學習前端技術，未來希望能成為一個優秀的前端工程師!</p>
-				<img src="https://picsum.photos/300/400">
-			</div>
-			<div class="sec-context" id="#anchor2">
-				<div class="introduce">
-					<p>我是陳冠樺，樂於學習，喜歡一步步去完成任務，雖然經驗還不成熟，但有一份工作的機會我願意去突破!</br>
-					專長技能:Html.Css.Javascript.RWD.Bootstrap</p>
-				</div>
-			</div>
+            <div class="context">
+                <p>我來自新北市鶯歌，畢業於龍華科技大學，目前致力於學習前端技術，未來希望能成為一個優秀的前端工程師!</p>
+                <img src="https://picsum.photos/300/400">
+            </div>
+            <div class="section1">
+                <div class="Intro">
+                    <span class="line"></span>
+                    <span id="anchor1">About</span>
+                    <span class="line"></span>
+                    <div class="introduce">
+                        <p>我是陳冠樺，樂於學習，喜歡一步步去完成任務，雖然經驗還不成熟，但有一份工作的機會我願意去突破!</br>
+                            專長技能:Html.Css.Javascript.RWD.Bootstrap</p>
+                    </div>
+                </div>
 
-			<a href="#" class="to-top">
-				<i class="fas fa-chevron-up" ></i>
-			</a>
-		</div>
-			
+            </div>
+            <div class="section2">
+                <div class="note">
+                    <span class="line"></span>
+                    <span id="anchor2">Note</span>
+                    <span class="line"></span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="item">
+                                    <img src="../Img/images.png" alt="">
+                                    <h2>VS CODE EXTENTION</h2>
+                                    <ul>
+                                        <li>- Git History</li>
+                                        <li>- Git Lens</li>
+                                        <li>- git-autoconfig</li>
+                                        <li>- git-flow</li>
+                                        <li>- gitignore</li>
+                                        <li>- Live Sass Compiler</li>
+                                        <li>- Live Server</li>
+                                        <li>- Node Exec</li>
+                                        <li>- Path Intellisense</li>
+                                        <li>- SCSS IntelliSense</li>
+                                        <li>- SCSS Refactoring</li>
+                                        <li>- JS-CSS-HTML Formatter</li>
+                                        <li>- ESLint</li>
+                                        <li>- Document This</li>
+                                        <li>- Project Manager</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="item">
+                                    <img src="../Img/images1.jpg" alt="">
+                                    <h2>Need To Know</h2>
+                                    <ul>
+                                        <li>- HTML</li>
+                                        <li>- CSS</li>
+                                        <li>- SASS</li>
+                                        <li>- Bootstrap</li>
+                                        <li>- RWD</li>
+                                        <li>- JavaScript </li>
+                                        <li>- API</li>
+                                        <li>- AJAX</li>
+                                        <li>- Git</li>
+                                        <li>- Github</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3">
+                <div class="work">
+                    <span class="line"></span>
+                    <span id="anchor3">Works</span>
+                    <span class="line"></span>
+                    <div class="project">
+                        <img src="" alt="">
+                        <p>
+                            <a href=""></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-	</div>
-	<footer id="footer" id="#anchor3">
-		<p>e-mail:<a href="mailto:ltyepc5698@gmail.com">ltyepc5698@gmail.com</a>phone:0976471461</p>
-	</footer>
-	<script type="text/javascript" src="../CSS/Scroll.js"></script>
+            <div class="section4">
+                <div class="work">
+                    <span class="line"></span>
+                    <span id="anchor4">Contact</span>
+                    <span class="line"></span>
+                </div>
+                <div class="ifm">
+                    <div class="ifm-text">
+                        <p>E-mail:ltyepc5698@gmail.com</br>
+                            電話:0976471461</br>
+                            聯絡時間:10:00 A.M.~12:00 P.M.</p>
+                    </div>
+                    <div class="GoogleMapsApi">
+                        <script>
+                            let map;
+
+                            function initMap() {
+                                const myLatLng = {
+                                    lat: 24.940112421679196,
+                                    lng: 121.33902132667119
+                                }
+                                map = new google.maps.Map(document.getElementById("map"), {
+                                    center: {
+                                        lat: 24.940112421679196,
+                                        lng: 121.33902132667119
+                                    },
+                                    zoom: 15,
+                                });
+
+                                new google.maps.Marker({
+                                    position: myLatLng,
+                                    map,
+                                    title: "address"
+                                })
+                            }
+                        </script>
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="to-top">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+
+
+    </div>
+    <footer id="footer" id="anchor3">
+        <p>e-mail:<a href="mailto:ltyepc5698@gmail.com">ltyepc5698@gmail.com</a>phone:0976471461</p>
+    </footer>
+    <script type="text/javascript" src="../CSS/Scroll.js"></script>
+    <!--<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbVhAc2NTVqRo9IxCrxpTiHc4dOk4wjUI&callback=initMap">-->
+    </script>
 </body>
+
 </html>
