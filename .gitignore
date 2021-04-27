@@ -1,0 +1,12 @@
+/node_modules
+/note
+/bundle
+/Html/awrr.html
+/Html/BeginCode.html
+/Html/VueTest.html
+/Html/maptest.html
+/Html/JsonTest.html
+/webpack.config.js
+/package.json
+/package-lock.json
+/LICENSE
