@@ -10,14 +10,39 @@
 </head>
 
 <body>
-    <div id="pack">{{mssg}}</div>
+    <div id="pack">
+        <input type="text" autofocus="autofocus" autocomplete="off" placeholder="請輸入" @keyup.enter="add" v-model="inputValue">
+        <ul>
+
+            <li v-for="(item,index) in arr" style="list-style: none;"><span class="index">{{ index+1 }}</span>{{ item }}
+                <button style="width: 20px;height: 20px;" @click="sub(index)"></button>
+                <button style="width: 20px;height: 20px;" @click="clear">clear</button>
+            </li>
+
+        </ul>
+        <footer v-show="arr.length!=0">總共:{{ arr.length }}</footer>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script>
         let vm = new Vue({
             el: '#pack',
             data: {
-                mssg: 'Hello Vue!'
+                arr: ["CoC", "飛刃", "熔打"],
+                inputValue: "閃打第一"
             },
+            methods: {
+                add: function() {
+                    this.arr.push(this.inputValue);
+                },
+                sub: function(index) {
+                    this.arr.splice(index, 1);
+                    console.log(index);
+                },
+                clear: function() {
+                    this.arr = [];
+                }
+            }
         })
     </script>
 </body>
