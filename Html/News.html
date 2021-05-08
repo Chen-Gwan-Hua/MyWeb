@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/CssReset.css">
+    <link rel="stylesheet" type="text/css" href="../sass/thumbCase.css">
+    <script src="https://kit.fontawesome.com/97f8b5bbf8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- run Webpack -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- run Webpack -->
+    <!------------------------------------------------ header ---------------------------------------- -->
+    <header class="header">
+        <div class="container" id="top-nav">
+            <section class="header-wrapper">
+                <div class="logo">
+                    <img src="../Img/logo-News.png" alt="">
+                </div>
+                <div class="tools-box ">
+                    <nav>
+                        <a href="javascript:;">
+                            <i class="fas fa-basketball-ball"></i>
+                            <p>Sport</p>
+                        </a>
+                        <a href="javascript:;">
+                            <i class="fas fa-plane"></i>
+                            <p>Travel</p>
+                        </a>
+                        <a href="javascript:;">
+                            <i class="fas fa-heart"></i>
+                            <p>My news</p>
+                        </a>
+                        <a href="javascript:;">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </nav>
+                </div>
+            </section>
+            <section class="navigation-wrapper ">
+                <nav class="navigation "></nav>
+            </section>
+        </div>
+    </header>
+    <!------------------------------------------------ left-bar ---------------------------------------- -->
+    <div class="main-content two-colunm main-cate" id="thumb-case">
+        <div class="container">
+            <section class="wrapper-left">
+                <div class="context-box-title">
+                    <h2>Headlines</h2>
+                </div>
+                <!------------------------------------------------ slider ---------------------------------------- -->
+                <div class="slider" id="slider">
+                    <section class="slide-holder">
+                        <img :src="headlineImage[imgIndex]" alt="找不到圖片">
+
+                        <a href="javascript:;" class="prev" @click="prev"><i class="fas fa-chevron-left"></i>
+
+                        </a>
+                        <a href="javascript:;" class="next" @click="next"><i class="fas fa-chevron-right"></i>
+
+                        </a>
+                        <div class="slide-title">
+                            <h2>{{ headlineTitle[imgIndex] }}</h2>
+                        </div>
+                    </section>
+                </div>
+                <!------------------------------------------------ thumb-news ---------------------------------------- -->
+                <div class="context-box-title">
+                    <h2>Topic issue</h2>
+                </div>
+                <section class="thumb-news">
+                    <div class="content-box">
+                        <div class="story-list-news" v-for="(item,index) in title">
+                            <div class="story-list-image">
+                                <img :src="img[index]" alt="找不到圖片">
+                            </div>
+                            <div class="story-list-text">
+                                <h2>{{ title[index] }}</h2>
+                                <p>{{ description[index] }}</p>
+                                <div class="story-list-info"><time>{{ date[index] }}</time></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <!------------------------------------------------ side bar---------------------------------------- -->
+            <aside class="aside">
+                <div class="context-box-title">
+                    <h2>Feature article</h2>
+                </div>
+                <div class="aside-wrapper">
+                    <div class="hottest-news">
+
+                    </div>
+                    <div class="feature-guess story-list-news" v-for="(item,index) in title">
+                        <div class="story-list-image">
+                            <img :src="img[index]" alt="找不到圖片">
+                        </div>
+                        <div class="story-list-text">
+                            <h2>{{ title[index] }}</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </div>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+    <script src="../CSS/NewsAPI.js "></script>
+</body>
+
+</html>
