@@ -212,6 +212,7 @@ html {
   .two-colunm .container .wrapper-left .slider .slide-holder img {
     max-width: 100vw;
     min-height: auto;
+    height: 70vw;
   }
 }
 
