@@ -205,7 +205,7 @@ html {
 
 .two-colunm .container .wrapper-left .slider .slide-holder img {
   width: 100%;
-  min-height: 540px;
+  height: 540px;
 }
 
 @media screen and (max-width: 768px) {
